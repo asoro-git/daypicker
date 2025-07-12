@@ -36,7 +36,8 @@ export function checkWeekend(customDate: string) {
               if (key > 0) {
                 return (
                   <li key={key} className="text-center">
-                    {key} day before it is <strong>{i.date}</strong>, which is{" "}
+                    {key} day{Math.abs(key) > 1 ? "s" : ""} before it is{" "}
+                    <strong>{i.date}</strong>, which is{" "}
                     {i.weekday.split(" ").length > 1 ? "the" : "a"}{" "}
                     <strong>{i.weekday}</strong>
                   </li>

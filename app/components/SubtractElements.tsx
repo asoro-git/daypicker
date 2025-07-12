@@ -28,7 +28,7 @@ export function DaySubtractElements({
       )}
       <div>
         <p className="text-sm text-gray-500 font-medium mb-1">
-          {dayNum} days before the day:
+          {dayNum} day{Math.abs(dayNum) > 1 ? "s" : ""} before the day:
           <br />
           YYYY-MM-DD
         </p>
